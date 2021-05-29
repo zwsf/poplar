@@ -422,7 +422,8 @@ export class View {
     }
 
     get paddingLeft(): number {
-        return Math.max(...Array.from(this.store.labelCategoryRepo.values())
-            .map(it => this.labelFont.widthOf(it.text))) / 2 + 1/* stroke */;
+        return 10
+        // return Math.max(...Array.from(this.store.labelCategoryRepo.values())
+        //     .map(it => this.labelFont.widthOf(it.text))) / 2 + 1/* stroke */;
     }
 }

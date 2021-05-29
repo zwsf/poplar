@@ -1,12 +1,12 @@
 {
-  "name": "poplar-annotation",
-  "version": "2.0.3",
-  "description": "web-based annotation tool for natural language processing (NLP) needs, inspired by brat rapid annotation tool.",
+  "name": "@wyai/annotation",
+  "version": "0.0.1",
+  "description": "web-based annotation tool for natural language processing (NLP) needs, inspired by brat rapid annotation tool and poplar annotation",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",
-  "repository": "https://github.com/synyi/Poplar.git",
-  "author": "longfangsong <longfangsong@icloud.com>",
+  "repository": "https://github.com/zwsf/poplar.git",
+  "author": "luwenlong <zuiwosuifeng@gmail.com>",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "start:dev": "webpack-dev-server --config webpack.dev.js",

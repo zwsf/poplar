@@ -6,6 +6,33 @@ import {Label} from "../Action/Label";
 import {Connection} from "../Action/Connection";
 import {Content} from "../Action/Content";
 
+interface ITest {
+    <T>(value: T): T
+}
+
+const test:ITest = function<T>(value:T): T {
+	return value
+}
+
+function getData<T>(v:T):T {
+    return v
+}
+
+console.log(test<number>(123))
+console.log(test<string>('abc'))
+
+interface IFace<T> {
+    (v: T): T
+}
+
+function testfn1<T>(v: T): T {
+	return v
+}
+
+const bbb:IFace<string> = getData;
+
+console.log(bbb('aaa'))
+
 window.onload = function () {
     (window as any).annotator = new Annotator(data, document.getElementById("container")!, {
         connectionWidthCalcMethod: "line"

@@ -63,6 +63,7 @@ export class TextSelectionHandler {
         let selectionInfo = this.getSelectionInfo();
         if (selectionInfo) {
             this.root.emit('textSelected', selectionInfo.startIndex, selectionInfo.endIndex);
+            this.root.view.svgElement.style.width = this.root.view.textElement.getBBox().width + 'px'
         }
         window.getSelection()?.removeAllRanges();
     }
